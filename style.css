@@ -1,255 +1,136 @@
 * {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.container {
-    width: 100%;
+body {
+    background-color: #F4F4F4;
 }
 
 
-/* nav css  */
+/* style section 1  */
 
-.navbar {
-    width: 13%;
-    background-color: #191718;
-    height: 100vh;
-    position: relative;
+.sec1 {
+    background-color: #FFFDF4;
+    padding: 70px 0px;
 }
 
-.ulDeskop,
-.ulMobile {
-    margin-left: 0;
-    position: sticky;
-    width: 100%;
-    top: 0;
-    left: 0;
+.title {
+    font-weight: 400;
+    font-size: 45px;
 }
 
-.navbar ul li {
-    list-style: none;
-    padding: 14px 0px 11px 16px;
-    border-bottom: 1px solid #5C5C5C;
-    background-color: #191718;
-    cursor: pointer;
+.top p {
+    width: 35%;
 }
 
-.navbar ul li a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    color: #AAAAAA;
+.oldPrice {
+    color: #72776C;
+    font-size: 13px;
+    text-decoration: line-through;
+    vertical-align: middle;
 }
 
-.active {
-    color: #fff !important;
+.time {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0px 10px;
 }
 
-.navbar ul li:hover {
-    background-color: #5C5C5C;
+.week {
+    font-size: 15px;
+    width: 75px;
+    /* padding-right: 20px; */
 }
 
-.navbar ul li:hover a {
-    background-color: #5C5C5C;
-    color: #fff;
+.textweek {
+    font-size: 14px;
+    width: calc(100% - 86px);
 }
 
-.menuMobile {
-    display: none;
+.time p {
+    padding: 12px 0px;
+    border-top: 1px solid #ECEDEC;
+}
+
+.time .row p {
+    margin-bottom: 0;
+}
+
+.time .row:last-child {
+    border-bottom: 1px solid #ECEDEC;
 }
 
 
-/* main css  */
+/* style section 2  */
 
-.main {
-    width: 87%;
-    padding: 0px 5%;
+.sect2 .container {
+    background-color: #fff;
+    border-radius: 20px;
 }
 
-.logo {
-    margin-top: 20px;
-    margin: 20px auto;
-    width: 310px;
-    height: 122px;
+.sect2 img {
+    border-radius: 20px;
 }
 
-.logo img {
-    width: 100%;
+.sect2 .textBox .tit {
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
-.banner {
-    background-color: #EFEFEF;
-    padding: 38px 17%;
+.quote i {
+    margin-top: 30px;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.2);
 }
 
-.banner h3 {
-    font-size: 18px;
-    line-height: 18px;
-    margin-bottom: 18px;
-}
-
-.banner p {
-    font-size: 16px;
-}
-
-.text-align-center {
+.say {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.04em;
     text-align: center;
+    margin: auto;
+    width: 80%;
 }
 
-.d-none {
-    display: none !important;
+.artist {
+    color: rgba(0, 0, 0, 0.3);
 }
 
-
-/* content css  */
-
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-
-.content h3 {
-    font-size: 24px;
-}
-
-.col-4 {
-    width: 33.33333%;
-    padding: 0px 25px;
-}
-
-.col-4:first-child {
-    margin-left: -25px;
-}
-
-.col-4:last-child {
-    margin-right: -25px;
-}
-
-.col-4 h3 {
-    margin-bottom: 18px;
-}
-
-.box {
-    float: right;
-}
-
-.box img {
-    margin-right: 16px;
-    width: 33%;
-}
-
-@media screen and (max-width: 1600px) {
-    .navbar {
-        height: auto;
+@media screen and (max-width: 1100px) {
+    .top p {
+        width: 50%;
     }
-}
-
-@media screen and (max-width: 1300px) {
-    .navbar {
-        width: 16%;
+    .quote i {
+        margin-top: 0px;
     }
-    .main {
-        width: 84%;
-        padding: 0px 4%;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .navbar {
-        width: 20%;
-    }
-    .box img {
-        width: 20%;
-    }
-    .main {
-        width: 80%;
-        padding: 0px 4%;
-    }
-    .col-4 {
+    .say {
         width: 100%;
-        margin-bottom: 30px;
-        padding: 0px 10px;
-    }
-    .col-4:first-child {
-        margin-left: 0;
-    }
-    .col-4:last-child {
-        margin-right: 0;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .navbar {
+@media screen and (max-width: 800px) {
+    .top p {
+        width: 70%;
+    }
+    .tit {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .top p {
         width: 100%;
-        margin-bottom: 20px;
-        background-color: #191718;
-        padding: 10px 4%;
     }
-    .main {
-        width: 100%;
-        margin-top: 20px;
-    }
-    .navbar .ulDeskop {
-        display: none !important;
-    }
-    .offcanvas {
-        width: 100%;
-        position: fixed;
-        height: 100vh;
-        top: 59px;
-        left: 0;
-        background-color: #00000076;
-    }
-    .ulMobile {
-        position: absolute !important;
-        width: 320px;
-    }
-    .bgMenu {
-        width: 100%;
-        background-color: #191718;
-        position: fixed;
-        padding: 10px 4%;
-        left: 0;
-        top: 0;
-        border-bottom: 1px solid red;
-    }
-    .menuMobile {
-        display: block;
-        padding: 7px 20px;
-        border: none;
-        border-radius: 0;
+    .say {
         font-size: 20px;
-        background-color: #191718;
-        color: #fff;
-        font-weight: 500;
-        border-radius: 3px;
+        line-height: 28px;
     }
-    .menuMobile:hover {
-        background-color: #fff;
-        color: black;
-        box-shadow: 0px 0px 4px 1px #ffffff58;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .logo {
-        width: 250px;
-    }
-    .banner {
-        padding: 38px 5%;
-    }
-    .content h3 {
-        font-size: 20px;
-    }
-    .banner p {
-        font-size: 12px;
+    .quote i {
+        font-size: 40px;
     }
 }
